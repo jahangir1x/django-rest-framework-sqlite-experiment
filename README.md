@@ -5,6 +5,7 @@
 * `git clone https://github.com/jahangir1x/django_rest_api_assignment.git`
 * `cd django_rest_api_assignment`
 * `python -m pip install -r requirements.txt`
+* `python manage.py migrate`
 * `python manage.py runserver`
 
 
