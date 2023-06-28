@@ -31,7 +31,8 @@ class Breed(models.Model):
 class Dog(models.Model):
     name = models.CharField(max_length=255)
     age = models.IntegerField()
-    breed = models.ForeignKey('Breed', related_name= 'dogs', on_delete=models.CASCADE)
+    breed = models.ForeignKey(
+        'Breed', related_name='dogs', on_delete=models.CASCADE)
     gender = models.CharField(max_length=64)
     color = models.CharField(max_length=64)
     favourite_food = models.CharField(max_length=255)
@@ -39,4 +40,3 @@ class Dog(models.Model):
 
     def __str__(self):
         return self.name
-
